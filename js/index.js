@@ -15,9 +15,6 @@ function deviceOrientationHandler(event) {
   // Z軸
   const alpha = event.alpha;
 
-  // グラフィックを傾ける
-  elAnimal.style.transform = `rotateX(${beta + 180}deg) rotateY(${gamma + 180}deg) rotateZ(${alpha}deg)`;
-
   // ログを出力する
   let html = ``;
   html += 'X回転 : ' + beta + '<br />';
